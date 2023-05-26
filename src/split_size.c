@@ -10,5 +10,12 @@
 
 unsigned int split_size(char **sp)
 {
-    
+    int i;
+
+    i = 0;
+    while (sp[i] != NULL) {
+        i += 1;
+    }
+    //    printf("%d\n", i);
+    return (i - 1);
 }

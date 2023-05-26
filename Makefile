@@ -10,6 +10,10 @@ NAME_TEST = 	test.out
 
 SRCS	=	src/split.c		\
 		src/split_delete.c	\
+		src/split_print.c	\
+		src/split_size.c	\
+		src/puts.c		\
+		src/strlen.c
 
 SRCS_TEST =	test/test_split.c
 

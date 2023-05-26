@@ -22,5 +22,7 @@ void split_print(char **sp);
 unsigned int split_size(char **sp);
 char *stu_strdup(const char *src);
 unsigned int stu_strlen(const char *str);
+void split_print(char **sp);
+int stu_puts(const char *str);
 
 #endif

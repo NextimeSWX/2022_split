@@ -62,6 +62,9 @@ char **split(char *str, char token)
         j += 1;
     }
     sp[j] = NULL;
+    //    free(liste);
+    //split_size(sp);
+    //split_print(sp);
     return (sp);
 }
 

@@ -10,5 +10,11 @@
 
 void split_print(char **sp)
 {
-    
+    int i;
+
+    i = 0;
+    while (sp[i] != NULL) {
+        stu_puts(sp[i]);
+        i += 1;
+    }
 }

@@ -11,10 +11,8 @@
 int stu_puts(const char *str)
 {
     int ret;
-    char n;
 
-    n = '\n';
     ret = write(1, str, stu_strlen(str));
-    write(1, &n, 1);
+    write(1, "\n", 1);
     return (ret);
 }

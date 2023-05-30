@@ -16,6 +16,5 @@ unsigned int split_size(char **sp)
     while (sp[i] != NULL) {
         i += 1;
     }
-    //    printf("%d\n", i);
-    return (i - 1);
+    return (i);
 }

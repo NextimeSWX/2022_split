@@ -47,7 +47,7 @@ char **split(char *str, char token)
     if (!str)
         return (NULL);
     sp = malloc(sizeof(char *) * (nb_token(str, token) + 2));
-    while (str[i]) {
+   while (str[i]) {
         k = 0;
         liste = malloc(sizeof(char) * strlentok(&str[i], token) + 1);
         while (str[i] != token && str[i]) {
@@ -62,9 +62,5 @@ char **split(char *str, char token)
         j += 1;
     }
     sp[j] = NULL;
-    //    free(liste);
-    //split_size(sp);
-    //split_print(sp);
     return (sp);
 }
-

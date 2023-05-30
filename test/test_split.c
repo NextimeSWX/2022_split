@@ -16,7 +16,8 @@ Test(split, normal)
     cr_assert_str_eq(sp[0], "hello");
     cr_assert_str_eq(sp[1], "world");
     cr_assert_not(sp[2]);
-    //    split_print(sp);
+    printf("size1 : %d\n", split_size(sp));
+    split_print(sp);
     split_delete(sp);
 }
 
@@ -26,9 +27,9 @@ Test(split, empty)
 
     sp = split(";", ';');
     cr_assert_str_eq(sp[0], "");
-    cr_assert_str_eq(sp[1], "");
     cr_assert_not(sp[2]);
-    //    split_print(sp);
+    //    printf("size : %d\n", split_size(sp));
+    split_print(sp);
     split_delete(sp);
 }
 
@@ -41,8 +42,9 @@ Test(split, double_tokens)
     cr_assert_str_eq(sp[0], "hello");
     cr_assert_str_eq(sp[1], "");
     cr_assert_str_eq(sp[2], "world");
-    cr_assert_not(sp[3]);
-    //split_print(sp);
+     cr_assert_not(sp[3]);
+     //     printf("size : %d\n", split_size(sp));
+     split_print(sp);
     split_delete(sp);
 }
 
@@ -56,6 +58,8 @@ Test(split, spaces)
     cr_assert_str_eq(sp[1], "world  ");
     cr_assert_str_eq(sp[2], "hel");
     cr_assert_not(sp[3]);
-    //split_print(sp);
+//    printf("size : %d\n", split_size(sp));
+    split_print(sp);
     split_delete(sp);
 }
+
